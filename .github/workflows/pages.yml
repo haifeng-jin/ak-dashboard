@@ -32,4 +32,4 @@ jobs:
         git config --global user.name "Unknown"
         git add .
         git commit -m "update data"
-        git push origin master
+        git push origin main
