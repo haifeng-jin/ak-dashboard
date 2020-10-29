@@ -5,7 +5,10 @@ name: Update Data
 
 on:
   schedule:
-    - cron: "* */1 * * *"
+    - cron: '0 1-23 * * *'
+    - cron: '0 0 * * *'
+  push:
+    branches: [ main ]
 
 jobs:
   build:
