@@ -30,9 +30,9 @@ jobs:
         pip install git+https://github.com/keras-team/autokeras.git@master
     - name: Update data
       run: |
-        date >> data.txt
+        sh shell/run.sh
         git config --global user.email "unknown@example.com"
         git config --global user.name "Unknown"
-        git add .
+        git add results
         git commit -m "update data"
         git push origin main
