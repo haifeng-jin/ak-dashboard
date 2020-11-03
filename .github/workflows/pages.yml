@@ -5,7 +5,6 @@ name: Update Data
 
 on:
   schedule:
-    - cron: '0 1-23 * * *'
     - cron: '0 0 * * *'
   push:
     branches: [ main ]
@@ -34,6 +33,6 @@ jobs:
         sh shell/run.sh
         git config --global user.email "unknown@example.com"
         git config --global user.name "Unknown"
-        git add results
+        git add docs/results
         git commit -m "update data"
         git push origin main
