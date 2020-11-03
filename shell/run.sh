@@ -1,1 +1,1 @@
-python benchmark/titanic.py results/titanic.csv
+python benchmark/titanic.py docs/results/titanic.csv
